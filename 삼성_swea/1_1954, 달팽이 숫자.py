@@ -15,6 +15,7 @@ for case in range(1, cases+1):
         a[x][y] = cnt
         nx = x + dx[i] # 0 0 1 2 2 2 1 1
         ny = y + dy[i] # 1 2 2 2 1 0 0 1
+        
         if nx >= N or ny >= N or nx <= -1 or ny <= -1 or a[x][y] != 0:
             i += 1
             if i >= 4:

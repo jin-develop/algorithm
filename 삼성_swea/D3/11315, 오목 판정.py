@@ -5,3 +5,5 @@ for i in array:
 
     print(i)
 
+# ->, ->아래, 아래<- , 아래
+

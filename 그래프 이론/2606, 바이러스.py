@@ -1,21 +1,31 @@
+'''
+7
+6
+1 2
+2 3
+1 5
+5 2
+5 6
+4 7
+'''
+
 N = int(input())
 T = int(input())
+gra = [[] for _ in range(N+1)]
 
+for _ in range(T):
+    a, b = map(int,input().split())
+    gra[a].append(b)
+    gra[b].append(a)
 
-array = [list(map(int,input().split())) for _ in range(T)]
-
-visited = [0] * (N+1)
-
-def dfs(v):
-    global visited
+def dfs(v, gra):
     visited[v] = True
-    for i in array:
-        if v in i:
-            for j in i:
-                if visited[j] != True:
-                    visited[j] = True
-                    v = j
+    for i in gra[v]:
+        if visited[i] != True:
+            dfs(i, gra)
 
-    return visited
-
-print(dfs(1))
+print(gra)
+visited = [0] * (N +1)
+dfs(1, gra)
+print(visited)
+print(visited.count(True) - 1)

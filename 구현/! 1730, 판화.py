@@ -18,7 +18,7 @@ first = array[0]
 if first == "U" or first == "D":
     graph[0][0] = '|'
 else:
-    graph[0][0] = "+"
+    graph[0][0] = "-"
 
 for i in array:
     idx = array_idx.index(i)
@@ -28,13 +28,17 @@ for i in array:
         nx = x + dx[idx]
         ny = y + dy[idx]
 
+
         if nx <= -1 or ny <= -1 or nx >= n or ny >= n:
             continue
-
+        
         if graph[x][y] == '-':
             graph[x][y] = '+'
-        
-        graph[nx][ny] = '|'
+            
+        if graph[nx][ny] == '+':
+            continue
+        else:
+            graph[nx][ny] = '|'
 
 
     elif i == "L" or i == "R":
@@ -47,10 +51,13 @@ for i in array:
         if graph[x][y] == '|':
             graph[x][y] = '+'
 
-        
-        graph[nx][ny] = '-'
+        if graph[nx][ny] == '+':
+            continue
+        else:
+            graph[nx][ny] = '-'
 
     x, y = nx, ny
+    
 
 for i in graph:
     for j in i:

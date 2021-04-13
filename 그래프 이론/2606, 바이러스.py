@@ -24,8 +24,7 @@ def dfs(v, gra):
         if visited[i] != True:
             dfs(i, gra)
 
-print(gra)
+
 visited = [0] * (N +1)
 dfs(1, gra)
 print(visited)
-print(visited.count(True) - 1)

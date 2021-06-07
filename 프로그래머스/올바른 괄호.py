@@ -1,3 +1,6 @@
+
+
+
 def solution(s):
     if s[0] == ')' or s[-1] == '(' or s.count('(') != s.count(')') or len(s) % 2 != 0:
         return False

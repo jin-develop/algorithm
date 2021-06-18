@@ -1,6 +1,10 @@
-n = int(input())
+array = ["c=","c-","dz=","d-","lj","nj","s=","z="]
 
-if (n % 4 ==0 and n % 100 != 0) or n % 400 ==0 :
-    print(1)
-else:
-    print(0)
+txt = input()
+cnt = 0
+for i in array:
+    cnt += txt.count(i)
+    txt = txt.replace(i," ")
+
+txt = txt.replace(" ","")
+print(cnt + len(txt))

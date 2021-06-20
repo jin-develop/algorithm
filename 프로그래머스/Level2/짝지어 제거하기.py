@@ -19,3 +19,6 @@ if len(org) == 0:
     print(1)
 else:
     print(0)
+
+
+# 스택으로 문제풀기

@@ -1,0 +1,9 @@
+# 파이썬 에서 upper, lower가 사용이 안될때가 있다.
+
+
+a = "ddyY"
+
+ex) a[0] = a[0].upper()
+안됌!!!!!
+
+-> a.capitalize() 사용해야함

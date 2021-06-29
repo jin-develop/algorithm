@@ -1,5 +1,8 @@
+
+
+
 def solution(priorities, location):
-    answer = 0
+    
     s = len(priorities)
     n = []
     

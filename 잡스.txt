@@ -1,0 +1,15 @@
+자바스크립트 문법
+
+var string = "UPPER lower"
+
+string = string.toUpperCase();
+
+string = string.toLowerCase();
+
+첫글자 대문자
+
+var first_le = array[j].charAt(0).toUpperCase();
+var rest = array[j].slice(1)
+
+for (var i =0; i< array.length; i++) {
+}

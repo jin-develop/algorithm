@@ -1,0 +1,9 @@
+[('Mickey', '19911001'), ('Alice', '19901230'), ('Tom', '19930815'), ('Jerry', '19900918'), ('Garfield', '19900920')]
+
+
+lst.sort(key=lambda x:int(x[1]))
+print(lst[-1][0])
+print(lst[0][0])
+
+1번째 키를 비교
+

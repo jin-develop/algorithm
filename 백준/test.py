@@ -1,10 +1,5 @@
-array = ["c=","c-","dz=","d-","lj","nj","s=","z="]
+s = 'asdf'
 
-txt = input()
-cnt = 0
-for i in array:
-    cnt += txt.count(i)
-    txt = txt.replace(i," ")
+a = s.split(" ")
 
-txt = txt.replace(" ","")
-print(cnt + len(txt))
+print(a)

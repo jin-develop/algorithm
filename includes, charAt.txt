@@ -1,0 +1,18 @@
+let str = "11s@#345d";
+ 
+if(str.includes("34")){
+ alert("34 텍스트가 포함됨");
+}else{
+ alert("34 텍스트가 포함되지 않음");
+}
+
+문자열 확인 
+let str = "안녕하세요?"
+
+let first_char = str.charAt(0);
+let second_char = str.charAt(1);
+let last_char = str.charAt(str.length-1);
+
+document.write("첫번째 문자 : ", first_char, '<br/>');
+document.write("두번째 문자 : ", second_char, '<br/>');
+document.write("마지막 문자 : ", last_char, '<br/>');
